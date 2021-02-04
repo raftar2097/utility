@@ -6,7 +6,6 @@ window.addEventListener("load",()=>{
     const outputdiv = document.querySelector("#outputdiv");
     input.addEventListener('change',event => {
         input.value = event.target.value;
-        console.log(input.value);
     })
     encode.addEventListener('click', event => {
         console.log("clicked");

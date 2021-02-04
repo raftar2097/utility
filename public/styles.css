@@ -30,10 +30,11 @@ header{
     width:10%;
     float: left;
     height:80%;
-    margin:1%;
     color:white;
+    padding-bottom:0.75%;
 } 
 i { 
+    margin-top: 10px;
     margin-right:10px;
 } 
 .container{
