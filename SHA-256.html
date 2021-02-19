@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Utility Site</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="./js/sha256.js"></script>
+</head>
+<body>
+    <header>
+        <div class="siteHeader">
+            <p>UtilitySite</p>
+        </div>
+        <div class="contactDetails">
+            <p><b>Contact<b>:<i>ragarwala2097@gmail.com</i></p>
+        </div>
+        <div class="like">
+            <i class="fa fa-linkedin fa-2x"><a href="https://www.linkedin.com/in/raftar2097" target="blank"></a></i>
+            <i class="fa fa-github fa-2x"><a href="https://github.com/raftar2097" target="blank"></a></i>  
+        </div>
+    </header>
+    <div class="container">
+        <div class="left">
+            <p class="title">Encoders & Decoders
+                <ul>
+                    <li><a href="UrlEncoderDecoder.html">Url Encoder & Decoder</a></li>
+                    <li><a href="Base64.html">Base 64 Encoder & Decoder</a></li>
+                </ul>
+            </p>
+            <p class="title">Cryptography & Security
+                <ul>
+                    <li><a href="SHA-256.html">SHA-256 Generator</a></li>
+                    <li><a href="SHA-512.html">SHA-512 Generator</a></li>
+                    <li><a href="MD5.html">MD5 Generator</a></li>
+                </ul>
+            </p>
+            <p class="title">Color Encoder & Decoder
+                <ul>
+                    <li><a href="RGBHEX.html">RGB to HEX</a></li>
+                    <li><a href="HEXRGB.html">HEX to RGB</a></li>
+                </ul>
+            </p>
+            <p class="title">Date Convertor
+                <ul>
+                    <li><a href="Epoc.html">Epoc to Date</a></li>
+                    <li><a href="Date.html">Date to Epoc</a></li>
+                </ul>
+            </p>
+        </div>
+        <div class="right">
+            <h2 style="text-align:left;color:#003366;">SHA-256 Generator</h2>
+            <hr>
+            <div class="content" >
+                <p style="margin-left:auto;">Copy-paste the string to encode or decode here</p>
+                <input class="innercontent" id="input" type="text"></input>
+                <button class="button" id="btnInput">Encode</button>
+                <!-- <button class="button" id="btnOutput">Decode</button> -->
+            </div>
+            <div class="content" id="outputdiv">
+                <p style="margin-left:auto;">The result is as follows</p>
+                <input class="innercontent" id="output" type="text"></input>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>

@@ -122,3 +122,21 @@ hr{
 #outputdiv{
     visibility:hidden;
 }
+.rgbtohex{
+    height:20%;
+    width:30%;
+    float: left;
+    display:block;
+    margin:10px;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+}
+#red{
+    background-color: #ffcccc;
+}
+#green{
+    background-color: #e6ffe6;
+}
+#blue{
+    background-color: #e6fffa;
+}
