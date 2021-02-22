@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2900adfc58.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="./public/styles.css">
+    <script src="js/date.js"></script>
+    <title>Utility Site</title>
+</head>
+<body>
+    <header>
+        <div class="siteHeader">
+            <p style="color: white;">UtilitySite</p>
+        </div>
+    </header>
+    <div class="row">
+        <div class="left">
+            <p class="title">Encoders & Decoders
+                <ul>
+                    <li><a href="UrlEncoderDecoder.html">Url Encoder & Decoder</a></li>
+                    <li><a href="Base64.html">Base 64 Encoder & Decoder</a></li>
+                </ul>
+            </p>
+            <p class="title">Cryptography & Security
+                <ul>
+                    <li><a href="SHA-256.html">SHA-256 Generator</a></li>
+                    <li><a href="SHA-512.html">SHA-512 Generator</a></li>
+                    <li><a href="MD5.html">MD5 Generator</a></li>
+                </ul>
+            </p>
+            <p class="title">Color Encoder & Decoder
+                <ul>
+                    <li><a href="RGBHEX.html">RGB to HEX</a></li>
+                    <li><a href="HEXRGB.html">HEX to RGB</a></li>
+                </ul>
+            </p>
+            <p class="title">Date Convertor
+                <ul>
+                    <li><a href="Date.html">Epoch & Unix Timestamp Conversion</a></li>
+                </ul>
+            </p>
+            <p class="title">IP Checker
+                <ul>
+                    <li><a href="IP.html">Check your IP Address </a></li>
+                </ul>
+            </p>
+        </div>
+        <div class="right">
+            <h1 id="about">Epoch & Unix Timestamp Conversion</h1>
+            <hr>
+            <p id="current_epoch">The current Unix epoch time is</p>
+            <hr>
+            <h3>Convert epoch to human-readable date</h3>
+            <div class="epocToHuman">
+                <input class="innercontent" id="inputEpoc" type="text" style="width: 50%;height:50px;"></input>
+                <button class="dateButton">Convert</button>
+            </div>
+            <p id="epocHuman"></p>
+            <hr>
+            <h3>Convert human-readable date to Epoch</h3>
+            <div class="HumanToEpoc">
+                <input class="innercontent" id="year" placeHolder="YYYY" type="text" maxlength="4" style="width: 100px;height:50px;margin-left:10px;margin-bottom: 10px;"></input>
+                <input class="innercontent" id="month" type="text" placeHolder="MM" maxlength="2" style="width: 60px;height:50px;margin-left:10px;margin-bottom: 10px"></input>
+                <input class="innercontent" id="day" type="text" placeHolder="DD" maxlength="2" style="width: 60px;height:50px;margin-left:10px;margin-bottom: 10px"></input>
+                <input class="innercontent" id="hour" type="text" placeHolder="HH" maxlength="2" style="width: 60px;height:50px;margin-left:10px;margin-bottom: 10px"></input>
+                <input class="innercontent" id="minute" type="text" placeHolder="mm" maxlength="2" style="width: 60px;height:50px;margin-left:10px;margin-bottom: 10px"></input>
+                <input class="innercontent" id="second" type="text" placeHolder="ss" maxlength="2" style="width: 60px;height:50px;margin-left:10px;margin-bottom: 10px"></input>
+            </div>
+            <button class="dateButton" id="humanButton">Convert</button>
+            <p id="humanEpoc"></p>
+            <hr>
+        </div>
+    </div>
+</body>
+</html>
