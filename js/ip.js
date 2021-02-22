@@ -1,7 +1,7 @@
 window.addEventListener("load",()=>{
    
     const btnInput = document.querySelector("#btnInput");
-    const ipGenerator = document.querySelector("#ipGenerator");
+    const LanguageGenerator = document.querySelector("LanguageGenerator");
 
     btnInput.addEventListener('click',event => {
         console.log("cliecked");
